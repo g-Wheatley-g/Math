@@ -75,7 +75,7 @@ function home() {
     const card = link(courseHash(key), "", "course-card " + key);
     const symbol = element("span", "course-symbol", key === "analysis" ? "∫" : "⟦ ⟧");
     symbol.setAttribute("aria-hidden", "true");
-    const arrow = element("span", "card-arrow", "↗");
+    const arrow = element("span", "card-arrow", "›");
     arrow.setAttribute("aria-hidden", "true");
     const details = key === "analysis" ? "56 тем" : "24 темы и дополнение";
     card.append(symbol, arrow, element("h2", "", course.title),
